@@ -5,5 +5,7 @@
 	"homepage": "https://github.com/diegohidalgo340/Relatorio",
 	"mainsrc": "./src",
 	"projects": [],
-	"dependencies": {}
+	"dependencies": {
+		"https://github.com/projeto-acbr-oficial/fpdf-pascal": "^1.1.0"
+	}
 }
