@@ -1,0 +1,9 @@
+{
+	"name": "Relatorio",
+	"description": "Factory de relatorios",
+	"version": "1.0.0",
+	"homepage": "https://github.com/diegohidalgo340/Relatorio",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {}
+}
