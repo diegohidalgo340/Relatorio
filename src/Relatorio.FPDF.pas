@@ -234,6 +234,7 @@ end;
 function TReportFPDF.PrintImage(const Stream: TStream; Extension: TReportImagesExt; X, Y, Width,
   Height: Double): IReport;
 begin
+  result := self;
   Fpdf.Image(Stream, Extension.ToString, X, Y, Width, Height);
 end;
 
@@ -251,16 +252,19 @@ end;
 
 function TReportFPDF.PrintImage(const Stream: TStream; Extension: TReportImagesExt): IReport;
 begin
+  result := self;
   Fpdf.Image(Stream, Extension.ToString);
 end;
 
 function TReportFPDF.PrintImage(FileName: String): IReport;
 begin
+  result := self;
   Fpdf.Image(FileName);
 end;
 
 function TReportFPDF.PrintImage(FileName: String; X, Y, Width, Height: Double): IReport;
 begin
+  result := self;
   Fpdf.Image(FileName, X, Y, Width, Height);
 end;
 
@@ -323,6 +327,7 @@ function TReportFPDF.PrintColumnTable(Const Value: String; Const ForceColumnDefi
 var
   lColumnDefinition : IReportTableColumn;
 begin
+  result := self;
   if ForceColumnDefinition = nil then
     lColumnDefinition := Table.CurrentColumn
   else
